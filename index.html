@@ -14,6 +14,56 @@
 </head>
 
 <body>
+    <section class="container">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Please Register Here</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#">
+                            <div class="mb-3">
+                                <label for="exampleInputName" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="exampleInputName"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="username@mail.com">
+                                <div id="emailHelp" class="form-text">Enter your valid Email Address</div>
+                            </div>
+                            <div>
+                                <label for="exampleInputGender" class="form-label">Select Your Gender</label>
+                                <select id="exampleInputGender" class="form-select mb-3" aria-label="Default select example">
+                                    <option selected>Select any one</option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
+                                    <option value="3">Secret</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                <label class="form-check-label" for="exampleCheck1">I accept the <a href="#">terms and
+                                        conditions</a></label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">Register</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <header class="container">
         <section class="">
             <nav class="navbar navbar-expand-lg bg-light mt-2">
@@ -224,7 +274,6 @@
                                         <p>Rating & Review</p>
                                     </div>
                                 </div>
-                                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                                 <button class="btn btn-success">Read More</button>
                             </div>
                         </div>
@@ -233,13 +282,16 @@
             </div>
         </section>
         <section class="container my-5">
-            <div class="bg-success text-light d-flex p-5 flex-lg-row flex-column align-items-center justify-content-around">
+            <div
+                class="bg-success text-light d-flex p-5 flex-lg-row flex-column align-items-center justify-content-around border rounded-3">
                 <div class="d-flex flex-column align-items-lg-start align-items-center">
-                    <h2>Ready To Join?</h2>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <h2 class="fw-bold">Ready To Join?</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout.</p>
                 </div>
                 <div class="w-100 d-flex align-items-center justify-content-center">
-                    <a class="btn btn-outline-success text-success bg-light px-4 fw-bold text-center">Register Now</a>
+                    <a class="btn btn-outline-success text-success bg-light px-4 fw-bold text-center" type="button"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">Register Now</a>
                 </div>
 
             </div>
